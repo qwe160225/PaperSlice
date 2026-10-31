@@ -1,0 +1,1 @@
+cfe1c9cb12b36ec0c1681a66f2fc9d01c7e516b8af309ce3a9bbc60635ece1f0  PaperSlice-QPDF-2.0.0-arm64.apk

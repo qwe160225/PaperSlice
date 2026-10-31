@@ -1,0 +1,27 @@
+{
+  "checks_passed": 117,
+  "native_address_space_limit_mib": 256,
+  "platform": "Linux x86_64; NOT Android phone",
+  "results": [
+    {
+      "sample": "300MB",
+      "source_pages": 500,
+      "selected_pages": 40,
+      "input_bytes": 300208413,
+      "output_bytes": 24017939,
+      "retained_images": 40,
+      "count_seconds": 0.0454,
+      "extract_seconds": 0.1472
+    },
+    {
+      "sample": "1GB",
+      "source_pages": 400,
+      "selected_pages": 34,
+      "input_bytes": 1000167914,
+      "output_bytes": 85015447,
+      "retained_images": 34,
+      "count_seconds": 0.0339,
+      "extract_seconds": 0.2198
+    }
+  ]
+}

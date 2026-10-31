@@ -1,0 +1,44 @@
+# Gradle / Android build
+.gradle/
+**/build/
+**/build-qpdf/
+local.properties
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Native / test workspaces
+native-build/
+test-work/
+*.part
+*.o
+*.so.bak
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Signing / secrets (keep development/debug.keystore — documented public debug key)
+*.jks
+*.keystore
+!development/debug.keystore
+signing.properties
+keystore.properties
+*.pem
+*.p12
+google-services.json
+.env
+.env.*
+secrets/

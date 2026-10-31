@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.paperslice.app.PdfEngineTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-30T23:47:17" hostname="8cd083a13efa" time="0.131">
+  <properties/>
+  <testcase name="unicodePasswordAndNativeException" classname="cn.paperslice.app.PdfEngineTest" time="0.111"/>
+  <testcase name="nativeExtractionAndProgress" classname="cn.paperslice.app.PdfEngineTest" time="0.01"/>
+  <testcase name="rejectsChangedSourceAndUnsortedPages" classname="cn.paperslice.app.PdfEngineTest" time="0.006"/>
+  <testcase name="callbackExceptionCrossesJniSafely" classname="cn.paperslice.app.PdfEngineTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,4 +1,4 @@
-轻页 PDF · QPDF 2.0.0
+轻页 PDF · QPDF 2.2.0
 
 PDF 处理核心：QPDF 12.4.2（Apache-2.0）
 https://qpdf.sourceforge.io/

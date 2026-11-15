@@ -1,0 +1,18 @@
+Picked up JAVA_TOOL_OPTIONS: -Djava.io.tmpdir=/workspace/scratch/22f9fdddf40b/tooling/tmp
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=PaperSlice Development
+Signer #1 certificate SHA-256 digest: b12c115115068350ca7dd03f15fcf1432266cb82218d0b5494c9a343f5b15e91
+Signer #1 certificate SHA-1 digest: 011ad7d96ac52b71e226ee22a1722605a2f3b466
+Signer #1 certificate MD5 digest: fd6eebcdd9c4df2060cc3b68f09c0e31
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: aba023b6207d5b5ae5c65927375384bbba8c1383eee5830a53b0df1da0983178
+Signer #1 public key SHA-1 digest: b5de7a8588fd7fadf8d44f0a2bc6e23ce2a0e89a
+Signer #1 public key MD5 digest: 48135b7807e6299b41af1a3a41acbe51

@@ -53,6 +53,7 @@ class SliceApp : Application() {
     override fun onCreate() {
         super.onCreate()
         State.restore(this)
+        if (getProcessName().endsWith(":preview")) File(cacheDir, "preview-work").deleteRecursively()
         if (!getProcessName().endsWith(":pdf")) return
         File(cacheDir, "pdf-scratch").deleteRecursively()
         File(cacheDir, "source.part").delete()

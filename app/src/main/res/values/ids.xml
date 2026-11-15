@@ -1,1 +1,11 @@
-<resources><item type="id" name="page_selection" /></resources>
+<resources>
+    <item type="id" name="page_selection" />
+    <item type="id" name="preview_page" />
+    <item type="id" name="preview_grid" />
+    <item type="id" name="preview_hd" />
+    <item type="id" name="preview_back" />
+    <item type="id" name="preview_jump" />
+    <item type="id" name="preview_position" />
+    <item type="id" name="preview_previous" />
+    <item type="id" name="preview_next" />
+</resources>

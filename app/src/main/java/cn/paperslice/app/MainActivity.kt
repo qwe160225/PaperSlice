@@ -28,6 +28,7 @@ class MainActivity : Activity() {
     private lateinit var selectionHint: TextView
     private lateinit var status: TextView
     private lateinit var progress: ProgressBar
+    private lateinit var preview: Button
     private lateinit var pick: Button
     private lateinit var read: Button
     private lateinit var extract: Button
@@ -93,6 +94,16 @@ class MainActivity : Activity() {
         fileCard.addView(fileMeta)
         pick = button("选择 PDF 文件", true) { chooseFile() }
         fileCard.addView(pick, spacing(16, 0))
+
+        preview = button("预览页面 / 跳转页码", false) {
+            val s = State.value
+            if (!s.busy && s.pages > 0) startActivity(Intent(this, PreviewActivity::class.java).apply {
+                putExtra("uri", s.source); putExtra("pages", s.pages); putExtra("name", s.name)
+                putExtra("bytes", s.bytes); putExtra("password", password.text.toString())
+                putExtra("repair", repair.isChecked)
+            })
+        }
+        fileCard.addView(preview, spacing(8, 0))
 
         val pagesCard = card(body)
         pagesCard.addView(label("02  /  选择页面", 12, green, true))
@@ -194,6 +205,7 @@ class MainActivity : Activity() {
         fileMeta.text = if (s.source.isEmpty()) "本地处理 · 不上传 · 保留原文件" else "${if (s.pages > 0) "${s.pages} 页  ·  " else ""}${formatBytes(s.bytes)}"
         status.text = s.stage + if (s.busy && s.started > 0) " · 已用 ${(SystemClock.elapsedRealtime() - s.started) / 1000} 秒" else ""
         status.setTextColor(if (s.error) Color.rgb(171, 64, 45) else muted)
+        preview.isEnabled = !s.busy && s.pages > 0
         pick.isEnabled = !s.busy; read.isEnabled = !s.busy && s.source.isNotEmpty()
         selection.isEnabled = !s.busy && s.pages > 0; password.isEnabled = !s.busy; repair.isEnabled = !s.busy
         quickButtons.forEach { it.isEnabled = !s.busy && s.pages > 0 }
@@ -287,7 +299,7 @@ class MainActivity : Activity() {
     }
     private fun showAbout() {
         val text = assets.open("NOTICE.txt").bufferedReader().use { it.readText() }
-        AlertDialog.Builder(this).setTitle("轻页 PDF · QPDF 2.0.0")
+        AlertDialog.Builder(this).setTitle("轻页 PDF · QPDF 2.2.0")
             .setMessage("离线页面提取工具。无需账号，不申请联网或全部文件访问权限。\n\n$text")
             .setPositiveButton("关闭", null).show()
     }

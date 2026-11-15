@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.paperslice.app.HdPreviewTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-10T14:24:37" hostname="0b2aa4c1d6d3" time="0.027">
+  <properties/>
+  <testcase name="hdIsRerenderedAtLargerResolutionWithFiniteBudget" classname="cn.paperslice.app.HdPreviewTest" time="0.017"/>
+  <testcase name="thumbnailDoesNotSatisfyHdAndNewPageReplacesOldNeighbours" classname="cn.paperslice.app.HdPreviewTest" time="0.009"/>
+  <testcase name="onlyCurrentAndImmediateNeighboursAreRequested" classname="cn.paperslice.app.HdPreviewTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

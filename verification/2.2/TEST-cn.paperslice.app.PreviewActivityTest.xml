@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.paperslice.app.PreviewActivityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-10T14:24:37" hostname="0b2aa4c1d6d3" time="8.277">
+  <properties/>
+  <testcase name="latestSearchWinsAcrossLayoutChangeAndLastPage" classname="cn.paperslice.app.PreviewActivityTest" time="6.465"/>
+  <testcase name="horizontalDragChangesNeighbourAndBoundariesAreSafe" classname="cn.paperslice.app.PreviewActivityTest" time="0.859"/>
+  <testcase name="doubleTapOpensCorrectHdPageAndBackRestoresPreview" classname="cn.paperslice.app.PreviewActivityTest" time="0.375"/>
+  <testcase name="automaticSearchActuallyMovesViewportAndHighlightsTarget" classname="cn.paperslice.app.PreviewActivityTest" time="0.238"/>
+  <testcase name="repeatedSamePageSearchReturnsAfterManualScrollAway" classname="cn.paperslice.app.PreviewActivityTest" time="0.339"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -13,7 +13,7 @@ class CancelToken {
 }
 fun interface NativeProgress { fun update(percent: Int) }
 
-/** Loaded only in the :pdf worker process. Arguments are standard UTF-8. */
+/** Loaded in the :pdf worker or on-demand :preview process. Arguments are standard UTF-8. */
 object PdfEngine {
     init { System.loadLibrary("paperslice") }
     private external fun countNative(path: ByteArray, password: ByteArray, repair: Boolean): Int
